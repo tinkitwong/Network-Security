@@ -1,0 +1,12 @@
+#!/usr/bin/python3
+from scapy.all import *
+import sys
+
+if len(sys.argv) > 3:
+	sys.exit("Usage: sudo python3 task2-1A.py [myIP]")
+
+E=Ether(dst='ff:ff:ff:ff:ff:ff')
+A=ARP(op=1, psrc=sys.argv[1], pdst=sys.argv[1], hwdst='ff:ff:ff:ff:ff:ff')
+pkt=E/A
+pkt.show()
+sendp(pkt) # send at l2

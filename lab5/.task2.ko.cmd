@@ -1,1 +1,0 @@
-cmd_/home/seed/Desktop/lab5/task2.ko := ld -r -m elf_i386 -T ./scripts/module-common.lds --build-id  -o /home/seed/Desktop/lab5/task2.ko /home/seed/Desktop/lab5/task2.o /home/seed/Desktop/lab5/task2.mod.o

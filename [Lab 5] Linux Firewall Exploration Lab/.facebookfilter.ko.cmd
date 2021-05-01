@@ -1,0 +1,1 @@
+cmd_/home/seed/Desktop/lab5/facebookfilter.ko := ld -r -m elf_i386 -T ./scripts/module-common.lds --build-id  -o /home/seed/Desktop/lab5/facebookfilter.ko /home/seed/Desktop/lab5/facebookfilter.o /home/seed/Desktop/lab5/facebookfilter.mod.o
